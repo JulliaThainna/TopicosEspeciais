@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Functions</title>
+    <script>
+        //Anonymous function
+        console.log('Anonymous function');
+        let add = function (a, b){
+            return a + b;
+        }
+        console.log(add(5, 3));
+        console.log('Type of var: ' + typeof add);
+        console.log('add Content: ' + add);
+
+        //Normal function
+        console.log('Normal funtion');
+        function adiciona(a, b){
+            return a + b;
+        }
+        console.log(adiciona(5, 3));
+
+        //Using map
+        console.log('Using map function');
+        let vet = [1, 2, 3];
+        vet = vet.map(function(x){
+            return x * 2;
+        })
+        console.log(vet);
+
+        //Arrow Function
+        console.log('Arrow Function');
+        let subtrai = (a, b) => a - b;
+        console.log(subtrai(10, 5));
+
+        //Doing map with arrow function
+        console.log('Doing Map with an arrow function');
+        console.log(vet);
+        vet = vet.map((x) => x * 2);
+        console.log(vet);
+
+        //Other exemple with anonymous function
+        setTimeout(function(){
+            console.log('Other example with anonymous function -> Waited one second');
+        }, 1000)
+
+        //Other exemple with anonymous function
+        console.log('Other exemple with anonymous function');
+        let saudacao = function(nome){
+            console.log('Hello, ' + nome + '!');
+        }
+        saudacao('World');
+
+        //Last example of anonymous function
+        console.log('Last exemple with anonymous function');
+        function multiplicador(x){
+            return function (y){
+                return x * y;
+            }
+        }
+        let dobro = multiplicador(2);
+        console.log('New value: ' + dobro(5));
+    </script>
+</head>
+<body>
+    <h1>Anonymous Functions</h1>
+</body>
+</html>
