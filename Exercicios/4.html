@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+    <script>
+        //Crie uma função que receba um objeto com informações de uma 
+        //pessoa (nome, idade, altura, etc.) e retorne uma string formatada com essas informações.
+        let pessoa = {nome: 'Júllia', idade: 21, altura: 1.58, peso: 58}
+        // let printar = (pessoa) => {
+        //     return `nome: ${pessoa.nome}, idade: ${pessoa.idade}, altura: ${pessoa.altura}, peso: ${pessoa.peso}`;
+        // }
+        function getPessoa(pessoa) {
+            return `nome: ${pessoa.nome}, idade: ${pessoa.idade}, altura: ${pessoa.altura}, peso: ${pessoa.peso}kg`;
+        }
+        console.log(getPessoa(pessoa));
+    </script>
+</head>
+<body>
+    <div>
+        <h2>Exercício 4</h2>
+    </div>
+</body>
+</html>
